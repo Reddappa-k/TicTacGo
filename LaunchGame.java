@@ -19,7 +19,7 @@ class TicTacToe {
     static void disBoard() {
         System.out.println("--------------");
         for (int i = 0; i < board.length; i++) {
-            System.out.print("| "); // Fix formatting
+            System.out.print("| "); 
             for (int j = 0; j < board[i].length; j++) {
                 System.out.print(board[i][j] + " | ");
             }
@@ -91,7 +91,7 @@ public class LaunchGame {
         TicTacToe t = new TicTacToe();
 
         HumanPlayer p1 = new HumanPlayer("reddy", 'X');
-        HumanPlayer p2 = new HumanPlayer("Proji", 'O'); // FIX: Different mark for Player 2
+        HumanPlayer p2 = new HumanPlayer("Proji", 'O');
 
         HumanPlayer cp = p1;
 
@@ -105,7 +105,7 @@ public class LaunchGame {
                 break;
             }
 
-            cp = (cp == p1) ? p2 : p1; // Switch player
+            cp = (cp == p1) ? p2 : p1; 
         }
     }
 }
